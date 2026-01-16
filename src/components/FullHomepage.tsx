@@ -60,7 +60,7 @@ export function FullHomepage({
   email = "contact@monblog.com",
 }: FullHomepageProps) {
   return (
-    <div className="min-h-screen">
+    <div className="w-full">
       <HeroSection
         title={heroTitle}
         subtitle={heroSubtitle}
