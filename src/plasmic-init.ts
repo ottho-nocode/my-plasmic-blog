@@ -24,6 +24,7 @@ PLASMIC.registerComponent(FullHomepage, {
   name: "FullHomepage",
   displayName: "🏠 Page Complète Blog",
   props: {
+    className: { type: "string" },
     heroTitle: { type: "string", defaultValue: "Bienvenue sur mon blog" },
     heroSubtitle: { type: "string", defaultValue: "Découvre mes articles sur le développement, le design et la tech." },
     heroButtonText: { type: "string", defaultValue: "Voir les articles" },

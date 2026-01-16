@@ -5,6 +5,7 @@ import { NewsletterForm } from "./NewsletterForm";
 import { Footer } from "./Footer";
 
 export interface FullHomepageProps {
+  className?: string;
   // Hero
   heroTitle?: string;
   heroSubtitle?: string;
@@ -33,6 +34,7 @@ export interface FullHomepageProps {
 }
 
 export function FullHomepage({
+  className,
   // Hero defaults
   heroTitle = "Bienvenue sur mon blog",
   heroSubtitle = "Découvre mes articles sur le développement, le design et la tech.",
@@ -60,7 +62,7 @@ export function FullHomepage({
   email = "contact@monblog.com",
 }: FullHomepageProps) {
   return (
-    <div className="w-full">
+    <div className={`w-full ${className || ""}`}>
       <HeroSection
         title={heroTitle}
         subtitle={heroSubtitle}
